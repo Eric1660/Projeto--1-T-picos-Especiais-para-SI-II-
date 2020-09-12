@@ -1,0 +1,10 @@
+<br>
+<h2>3° Semestre</h2>
+ <br>
+<div *ngFor="let disciplinas3 of list; index as i">
+  <a [routerLink] = "['/disciplinas3', i]">
+   {{disciplinas3.disciplina}}
+  </a>
+</div>
+<br>
+<a [routerLink]="['/disciplinas-semestre']">Voltar</a>
